@@ -12,7 +12,7 @@ st.altair_chart(chart)
 
 st.header('2.Interactive Charts')
 st.subheader('2.1 Line Chart')
-df = pd.read_csv('C:/Users/hp/Desktop/Streamlit/lang_data.csv')
+df = pd.read_csv('lang_data.csv')
 lang_list = df.columns.tolist()
 lang_choices = st.multiselect('Choose ur language',lang_list)
 new_df = df[lang_choices]
@@ -23,7 +23,7 @@ st.area_chart(new_df)
 
 st.header('Data Visualisation with Plotly')
 st.subheader('3.1 Displaying the Dataset')
-df = pd.read_csv('C:/Users/hp/Desktop/Streamlit/tips.csv')
+df = pd.read_csv('tips.csv')
 st.dataframe(df.head())
 
 st.subheader('3.2 Pie Chart')
